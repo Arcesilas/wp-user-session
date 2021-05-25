@@ -1,0 +1,29 @@
+{
+    "name": "arcesilas/wp-user-session",
+    "description": "Share Wordpress users sessions with your Laravel app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arcesilas",
+            "email": "arcesilas@neutre.email"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "jgrossi/corcel": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpUserSession\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WpUserSession\\WpUserSessionServiceProvider"
+            ]
+        }
+    }
+}
